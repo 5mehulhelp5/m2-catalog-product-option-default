@@ -50,7 +50,7 @@ class CustomOptions
                 'children',
                 static::FIELD_DEFAULT_NAME
             ],
-            $this->getDefaultFieldConfig(110)
+            $this->getDefaultFieldConfig(120)
         );
     }
 
