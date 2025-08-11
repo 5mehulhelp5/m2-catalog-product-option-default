@@ -48,7 +48,7 @@ class Cart
             $product = $this->getProduct($productInfo);
 
             foreach ($product->getOptions() as $option) {
-                if ($option->getType() === 'drop_down') {
+                if ($option->getType() === 'drop_down' || $option->getType() === 'select2') {
                     /** @var Value $optionValue */
                     foreach ($option->getValues() as $optionValue) {
                         if ($optionValue->getData('default')) {
